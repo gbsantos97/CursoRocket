@@ -1,0 +1,14 @@
+body {
+    background: red;
+}
+/*
+abaixo é uma declaração
+
+aqui o EX (body) é o seletor ele esta selecionando a tag e aplicando uma
+propriedade (background)
+e o valor (red) esta sendo aplicado na tag body
+
+seletor = onde buscar
+propriedade = onde ser feito 
+valor = a aplicação
+*/

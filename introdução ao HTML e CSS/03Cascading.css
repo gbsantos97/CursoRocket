@@ -1,0 +1,34 @@
+    /*
+    Cascading ou efeito cascata 
+    */
+body {
+    background-color: aqua;
+    background-color: black; 
+
+    /*
+    Quando ha 2 ou mais declarações a ultima 
+    propriedade se torna mais relevante
+    */
+}
+ /* Especifidade e Peso
+
+    #id {
+        peso 100
+    }
+
+            .class {
+                peso 10
+            }
+
+    element {
+        peso 1
+    }
+
+EXEMPLO ABAIXO
+    */
+    p#ola{
+        color:red;
+    }
+    p{
+        color: blue;
+    }
