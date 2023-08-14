@@ -1,0 +1,36 @@
+header{
+    border: 1px solid red;
+    padding: 60px;
+}
+h1{
+    border: 1px solid green;
+    height: 60px ;    
+}
+p{
+    border: 1px solid black;
+    margin: 20px;
+}
+/*exemplo de algumas tags abaixo*/
+div{
+    color: red;/*cor*/
+    font-size: 100px; /*tamanho da fonte*/
+    margin: 20px;/*margem*/ 
+    padding: 60px; /*espaço dentro da caixa*/
+    font-family: 'DynaPuff', cursive; /*aqui estou adicionando a fonte que veio do fonts.google.com*/
+    width: 100%; /*largura*/
+    height: 100%;/*altura*/
+    border: 4px solid green;/*bordas*/
+    outline: 4px solid yellow;/*por fora da caixa*/
+    background-color: rgb(143, 43, 43);/*cor de fundo*/
+    background-size: contain ;/*com essa posso alterar tamanho da imagem ou como no exemplo usar a propriedade contain para limitar a imagem dentro da caixa*/
+    background-position: center; /*aqui marca a posição*/
+    background-repeat: no-repeat;/*aqui é, sobre a imagem se repetir ou não*/
+    background-image:url(https://source.unsplash.com/random);/*aqui tag para imagem*/
+    background-attachment: fixed; /*aqui é para travar a imagem de fundo ou posso usar a property 'scroll' para o fundo seguir a rolagem*/
+    letter-spacing: normal; /*aqui é o espaçamento das letras*/
+    word-spacing: normal; /*aqui é o espaçamento entre as palavras*/
+    line-height: normal; /*aqui é os espaços entre as linhas*/
+    text-transform: none; /*aqui é para transformação de texto*/
+    text-decoration: underline blueviolet; /*aparencia decorativa de texto da para adicionar varias propriedades*/
+    text-align: center; /*posicionamento do texto*/
+}
