@@ -1,3 +1,13 @@
 body {
-  background-color: black;
+  /* background-image: url(./assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;*/
+  background: url(./assets/assets/bg-mobile.jpg) no-repeat top center/cover; /*SHORTHAND*/
 }
+/* 
+VALORES DE POSICIONAMENTO
+top X ---------------------
+center Y 
+
+*/
