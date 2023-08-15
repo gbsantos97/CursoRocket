@@ -11,3 +11,20 @@ top X ---------------------
 center Y 
 
 */
+*body {
+  font-family: "Inter", sans-serif;
+}
+#container {
+  height: 600px;
+  width: 360px;
+  border: 1px solid red;
+  margin: auto;
+}
+#profile {
+  text-align: center;
+}
+#profile img {
+  width: 112px;
+
+  margin-top: 50px;
+}
