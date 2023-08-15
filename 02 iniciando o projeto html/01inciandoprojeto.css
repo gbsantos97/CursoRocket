@@ -11,8 +11,9 @@ top X ---------------------
 center Y 
 
 */
-*body {
+body * {
   font-family: "Inter", sans-serif;
+  color: white;
 }
 #container {
   height: 600px;
