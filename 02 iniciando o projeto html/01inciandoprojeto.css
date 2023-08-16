@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   /* background-image: url(./assets/assets/bg-mobile.jpg);
   background-repeat: no-repeat;
@@ -16,16 +21,37 @@ body * {
   color: white;
 }
 #container {
-  height: 600px;
   width: 360px;
   border: 1px solid red;
-  margin: auto;
+  margin: 56px auto 0px;
 }
 #profile {
   text-align: center;
+  padding: 24px;
 }
 #profile img {
   width: 112px;
+}
+#profile p {
+  margin-top: 8px;
+  font-weight: 500;
+  line-height: 24px;
+}
+ul {
+  list-style: none;
+  margin: 24px;
+}
 
-  margin-top: 50px;
+li {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.5));
+  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(4px);
+  margin: 16px 16px;
 }
