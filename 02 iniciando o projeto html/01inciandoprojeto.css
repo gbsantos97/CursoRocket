@@ -74,3 +74,10 @@ ul li a:hover {
 #baixo {
   margin: 16px 0px 0px 0px;
 }
+#social {
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
