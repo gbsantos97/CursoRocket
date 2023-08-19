@@ -22,7 +22,7 @@ body * {
 }
 #container {
   width: 360px;
-  border: 1px solid red;
+
   margin: 56px auto 0px;
 }
 #profile {
@@ -42,16 +42,35 @@ ul {
   margin: 24px;
 }
 
-li {
+ul li a {
   display: flex;
   padding: 16px 24px;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   gap: 8px;
   align-self: stretch;
   border-radius: 8px;
   border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.5));
   background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(4px);
-  margin: 16px 16px;
+  -webkit-backdrop-filter: blur(4px);
+  margin: 16px 0px 16px 0px;
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: all 0.2;
+}
+/*pseudo-selector
+":hover" top de mais ascende a seleção*/
+ul li a:hover {
+  background-color: rgba(25, 24, 27, 0.3);
+  border: 2px solid white;
+  color: blueviolet;
+}
+#topo {
+  margin: 0px 0px 16px 0px;
+}
+#baixo {
+  margin: 16px 0px 0px 0px;
 }
