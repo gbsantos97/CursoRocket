@@ -3,12 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.2);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-collor: rgba(255, 255, 255, 0.2);
+}
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.2);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-collor: rgba(0, 0, 0, 0.1);
+}
 body {
   /* background-image: url(./assets/assets/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;*/
-  background: url(./assets/assets/bg-mobile.jpg) no-repeat top center/cover; /*SHORTHAND*/
+  background: var(--bg-url) no-repeat top center/cover; /*SHORTHAND*/
 }
 /* 
 VALORES DE POSICIONAMENTO
@@ -18,7 +34,7 @@ center Y
 */
 body * {
   font-family: "Inter", sans-serif;
-  color: white;
+  color: var(--text-color);
 }
 #container {
   width: 360px;
@@ -40,18 +56,20 @@ body * {
 ul {
   list-style: none;
   margin: 24px;
+  padding: 24px 0;
 }
 
 ul li a {
   display: flex;
-  padding: 16px 24px;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 8px;
-  align-self: stretch;
+
+  padding: 16px 24px;
+
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
   border-radius: 8px;
-  border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.5));
-  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.1));
+
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   margin: 16px 0px 16px 0px;
@@ -64,9 +82,8 @@ ul li a {
 /*pseudo-selector
 ":hover" top de mais ascende a seleção*/
 ul li a:hover {
-  background-color: rgba(25, 24, 27, 0.3);
-  border: 2px solid white;
-  color: blueviolet;
+  background-color: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
 #topo {
   margin: 0px 0px 16px 0px;
@@ -76,8 +93,26 @@ ul li a:hover {
 }
 #social {
   display: flex;
-  padding: 24px;
+  padding: 24px 24px;
+  font-size: 24px;
   justify-content: center;
   align-items: flex-start;
-  gap: 16px;
+  gap: 32px;
+  margin: 0;
+}
+#social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#social a:hover {
+  background-color: var(--highlight-collor);
+}
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
 }
