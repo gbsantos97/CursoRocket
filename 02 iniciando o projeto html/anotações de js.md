@@ -1,4 +1,4 @@
-//String
+//String (eu estou definindo string é um texto )
 ""
 ""
 ``
