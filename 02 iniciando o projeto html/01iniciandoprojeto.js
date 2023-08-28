@@ -8,15 +8,16 @@ function toggleMode() {
   // }
 
   //pegar a tag img
+  //querySelector buscar elemento ou seletor
   const img = document.querySelector("#profile img")
   //substituir a imagem
   if (html.classList.contains("light")) {
     // se tiver light mode, adicionar a imagem light
-    //selecionando por atributo setAttribute
+    //selecionando por atributo setAttribute ele só aceita 2 parametros chave(src) e "valor"
     img.setAttribute("src", "./assets/assets/avatar-light.png")
     img.setAttribute(
       "alt",
-      "Professor myke de oculos escuros,jaqueta de couro,com topete,fundo degrade roxo com azul"
+      "Gabriel de topete com jaqueta preta porta de fundo"
     )
   } else {
     //se tiver sem light mode,manter a img normal
@@ -27,11 +28,9 @@ function toggleMode() {
     )
   }
 
-  const p = document.querySelector("p")
-
   if (html.classList.contains("light")) {
-    document.getElementById("nome").innerHTML = "@MykeBrito"
-    // se
+    document.getElementById("nome").innerHTML = "@GabrielPiresLight"
+    // pegando elemento pelo id
   } else {
     document.getElementById("nome").innerHTML = "@GabrielPires"
   }
