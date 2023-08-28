@@ -14,17 +14,19 @@ function toggleMode() {
   if (html.classList.contains("light")) {
     // se tiver light mode, adicionar a imagem light
     //selecionando por atributo setAttribute ele só aceita 2 parametros chave(src) e "valor"
+
     img.setAttribute("src", "./assets/assets/avatar-light.png")
     img.setAttribute(
       "alt",
-      "Gabriel de topete com jaqueta preta porta de fundo"
+
+      "Gabriel de camisa vermelha, sem barba, com topete,fundo azul céu"
     )
   } else {
     //se tiver sem light mode,manter a img normal
     img.setAttribute("src", "./assets/assets/avatar.png")
     img.setAttribute(
       "alt",
-      "Gabriel de camisa vermelha, sem barba, com topete,fundo azul céu"
+      "Gabriel de topete com jaqueta preta porta de fundo"
     )
   }
 
