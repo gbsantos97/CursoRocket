@@ -31,7 +31,7 @@ function toggleMode() {
   }
 
   if (html.classList.contains("light")) {
-    document.getElementById("nome").innerHTML = "@GabrielPiresLight"
+    document.getElementById("nome").innerHTML = "@GabrielPires"
     // pegando elemento pelo id
   } else {
     document.getElementById("nome").innerHTML = "@GabrielPires"
